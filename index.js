@@ -26,7 +26,7 @@ SASSPlugin.prototype.toTree = function(tree, inputPath, outputPath, inputOptions
     return new SassCompiler(inputTrees, input, output, options);
   });
 
-  return mergeTrees(trees);
+  return mergeTrees(trees, options.mergeTrees);
 };
 
 module.exports = {
